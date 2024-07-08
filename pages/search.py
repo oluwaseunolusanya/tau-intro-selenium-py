@@ -11,11 +11,14 @@ class DuckDuckGoSearchPage:
     # URL
     URL = 'https://www.duckduckgo.com'
 
+    # Locators
     SEARCH_INPUT = (By.ID, 'searchbox_input')    # Adding search input locator.
 
+    # Initialiser
     def __init__(self, browser):
         self.browser = browser
 
+    # Interaction Methods
     def load(self):
         # TODO
         pass
