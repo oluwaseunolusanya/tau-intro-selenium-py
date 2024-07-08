@@ -3,18 +3,16 @@ This repository contains the companion project for the
 *Introduction to Selenium WebDriver with Python* course
 taught by [Andrew "Pandy" Knight](https://twitter.com/AutomationPanda)
 on [Test Automation University](https://testautomationu.applitools.com/).
-During the course, you will build a basic Web UI test automation solution using Python and Selenium WebDriver.
-Each chapter will add a new layer to the solution.
-Follow the instructions in this README to code the solution as you take each chapter.
-If you get stuck, refer to the example code in this repository for help.
+During the course, I built a basic Web UI test automation solution using Python and Selenium WebDriver.
+Each chapter added a new layer to the solution.
 
 # Setup Instructions
 
 ## Python Setup
 
-You can complete this course using any OS: Windows, macOS, Linux, etc.
+You can complete this course using any OS: Windows, macOS, Linux, etc. I completed the course on a Windows 10 laptop.
 
-This course requires Python 3.8 or higher.
+This course requires Python 3.8 or higher. I used 3.12.4.
 You can download the latest Python version from [Python.org](https://www.python.org/downloads/).
 
 This course also requires [pipenv](https://docs.pipenv.org/).
@@ -120,13 +118,13 @@ If these steps don't work in your project, then try to run without pipenv:
 
 ## Repository Branching
 
-The `master` branch contains the code for the course's starting point.
-The project is basically empty in the `master` branch.
+The `main` branch contains the code for the course's starting point.
+The project is basically empty in the `main` branch.
 
-If you want to code along with the course, then create a branch for your work off the `master` branch.
+If you want to code along with the course, then create a branch for your work off the `main` branch.
 To create your own branch named `course/develop`, run:
 
-    > git checkout master
+    > git checkout main
     > git branch course/develop
     > git checkout course/develop
 
