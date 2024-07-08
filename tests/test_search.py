@@ -2,13 +2,13 @@
 These tests cover DuckDuckGo searches.
 """
 
-from pages.result import DuckDuckGoResultPage
 from pages.search import DuckDuckGoSearchPage
+from pages.result import DuckDuckGoResultPage
 
 def test_basic_duckduckgo_search(browser):
     search_page = DuckDuckGoSearchPage(browser)
     result_page = DuckDuckGoResultPage(browser)
-    PHRASE = "panda"
+    PHRASE = 'panda'
     
     # Given the DuckduckGo home page is displayed
     search_page.load()
@@ -26,4 +26,4 @@ def test_basic_duckduckgo_search(browser):
     for title in result_page.result_link_titles():
         assert PHRASE.lower() in title.lower()
 
-    raise Exception("Incomplete Test")
+    #raise Exception("Incomplete Test")
