@@ -1,11 +1,12 @@
 """
 These tests cover DuckDuckGo searches.
 """
-
+import pytest
 from pages.search import DuckDuckGoSearchPage
 from pages.result import DuckDuckGoResultPage
 
-def test_basic_duckduckgo_search(browser):
+@pytest.mark.parametrize('phrase',['panda', 'python', 'polar bear'])
+def test_basic_duckduckgo_search(browser, phrase):
     search_page = DuckDuckGoSearchPage(browser)
     result_page = DuckDuckGoResultPage(browser)
     PHRASE = 'panda'
