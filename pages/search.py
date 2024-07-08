@@ -12,7 +12,7 @@ class DuckDuckGoSearchPage:
     URL = 'https://www.duckduckgo.com'
 
     # Locators
-    SEARCH_INPUT = (By.ID, 'searchbox_input')    # Adding search input locator.
+    SEARCH_INPUT = (By.ID, 'search_form_input')    # Adding search input locator.
 
     # Initialiser
     def __init__(self, browser):
